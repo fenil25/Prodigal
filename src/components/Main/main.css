@@ -1,0 +1,72 @@
+.hform{
+  height: 230px;
+}
+
+.ourcolor{
+  color: #F95738;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.ourtext{
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #006DAA;
+}
+
+.ourbutton{
+  background-color: #F95738;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.infohead{
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #006DAA;
+}
+
+.infosubhead{
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+.inforow{
+  margin: 75px 30px;
+}
+
+.infodiv{
+  text-align: left;
+  padding-left: 30px;
+}
+
+@media (max-width: 780px){
+  .mainimg{
+    padding-bottom: 30px;
+  }
+  .hform{
+    height: 330px;
+  }
+  .inforow{
+    margin: 36px 10px;
+  }
+  .redheight{
+    height: 150px;
+  }
+  .redheight2{
+    height: 100px;
+  }
+  .infosubhead{
+    font-size: 20px;
+  }
+  .infohead{
+    font-size: 30px;
+  }
+  .infodiv{
+    text-align:center;
+  }
+}

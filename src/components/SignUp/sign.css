@@ -1,0 +1,41 @@
+.inputbox{
+  height: 30px;
+  background-color: #D3D3D3;
+}
+
+.exit:hover{
+  cursor: pointer;
+}
+
+.signfacthead{
+font-size: 30px;
+color:orange;
+}
+
+.ourbutton{
+  background-color: #F95738;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.signfactsubhead{
+  font-size: 18px
+}
+
+.labelclass{
+  text-align: left;
+  padding-left: 30px;
+}
+
+@media (max-width: 780px){
+  .signfacthead{
+    font-size: 20px;
+  }
+  .signfactsubhead{
+    font-size: 12px;
+  }
+  .labelclass{
+    text-align: center;
+  }
+}

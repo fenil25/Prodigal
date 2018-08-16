@@ -1,0 +1,15 @@
+.teamhead{
+  font-size:90px;
+  padding:"75px 0px";
+}
+
+.linkedin:hover{
+  cursor: pointer;
+}
+
+@media (max-width: 780px){
+  .teamhead{
+    font-size:35px;
+    padding:"50px 0px";
+  }
+}
