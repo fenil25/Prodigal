@@ -10,6 +10,10 @@ import RegisterForm from './RegisterForm';
 import SignUpFact from './SignUpFact';
 import './sign.css';
 
+import conv from '../../images/facts/conv.png';
+import growth from '../../images/facts/growth.png';
+import vendor from '../../images/facts/vendor.png';
+
 const styles = {
   appBar: {
     position: 'relative',
@@ -36,39 +40,49 @@ class SignUp extends React.Component {
       <i className="fa fa-times float-right fa-5x m-5 exit" style={{fontSize:"50px", color:"#777"}} onClick={this.props.handleClose}></i>
         <div className="mx-5 mt-3 row">
           <div className="col" style={{display:"table"}}>
-            <h1 style={{fontSize: "52px", color:"#003366"}}><i>Prodigal</i></h1>
+            <h1 style={{fontSize: "52px", color:"#006DAA", fontFamily:"'Merriweather', serif"}}><i>Prodigal</i></h1>
             <span style={{fontSize: "24px", color:"#5B5B5B"}}>Sign Up For Free</span>
           </div>
-        </div>
+        </div><Grid container spacing={2}>
+          <Grid item md={6} xs={12} sm={12} lg={6}>
+            <div style={{textAlign:"left"}}>
+              <SignUpFact image={vendor} number="10+" description="Lenders working with us"/>
+              <SignUpFact image={conv} number="50,000+" description="Borrower Conversations"/>
+              <SignUpFact image={growth} number="20%" description="Lift in repayment for lenders"/>
+            </div>
+          </Grid>
+          <Grid item md={6} xs={12} sm={12} lg={6}>
+            <div style={{textAlign:"center"}}>
+              <RegisterForm email={this.props.email} handleClose={this.props.handleClose} opensnackbar={this.props.opensnackbar}/>
+            </div>
+          </Grid>
+        </Grid>
       </MediaQuery>
+
+
       <MediaQuery maxWidth={780}>
       <i className="fa fa-times float-right fa-3x m-5 exit" style={{fontSize:"50px", color:"#777"}} onClick={this.props.handleClose}></i>
         <div className="mx-4 mt-4 row">
           <div className="col" style={{display:"table"}}>
-            <h1 style={{fontSize: "40px", color:"#006DAA"}}><i><b>Prodigal</b></i></h1>
+            <h1 style={{fontSize: "40px", color:"#006DAA", fontFamily:"'Merriweather', serif"}}><i><b>Prodigal</b></i></h1>
             <span style={{fontSize: "16px", color:"#5B5B5B"}}>Sign Up For Free</span>
           </div>
         </div>
-      </MediaQuery>
         <Grid container spacing={2}>
           <Grid item md={6} xs={12} sm={12} lg={6}>
             <div style={{textAlign:"center"}}>
-              <RegisterForm email={this.props.email}/>
+              <RegisterForm email={this.props.email} handleClose={this.props.handleClose} opensnackbar={this.props.opensnackbar}/>
             </div>
           </Grid>
           <Grid item md={6} xs={12} sm={12} lg={6}>
             <div style={{textAlign:"left"}}>
-              <SignUpFact image={img1} number="65,000+" description=" Unnecessary escape character:
-              'sendTo' is assigned a value but neverimg elements must have an"/>
-
-             <SignUpFact image={img1} number="65,000+" description=" Unnecessary escape character:
-             'sendTo' is assigned a value but neverimg elements must have an"/>
-
-              <SignUpFact image={img1} number="65,000+" description=" Unnecessary escape character:
-              'sendTo' is assigned a value but neverimg elements must have an"/>
+              <SignUpFact image={vendor} number="10+" description="Lenders working with us"/>
+              <SignUpFact image={conv} number="50,000+" description="Borrower Conversations"/>
+              <SignUpFact image={growth} number="20%" description="Lift in repayment for lenders"/>
             </div>
           </Grid>
         </Grid>
+      </MediaQuery>
       </div>
     );
   }

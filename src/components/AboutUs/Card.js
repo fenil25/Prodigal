@@ -13,7 +13,7 @@ class Card extends Component {
           <div style={{padding: "0px 50px"}}>
             <img src={this.props.image} alt="Avatar" style={{borderRadius: "50%", padding:"50px 0", width:"100%", height:"26.56vw", minHeight:"300px"}}/>
             <div style={{textAlign:"center", paddingBottom: "50px",}}>
-            <div style={{height:"380px"}}>
+            <div style={{height:"400px"}}>
               <span style={{fontSize:"32px"}}><b>{this.props.name}</b></span><br/>
               <div style={{fontSize:"28px",marginBottom:"50px"}}>{this.props.position}</div>
 
@@ -42,25 +42,25 @@ class Card extends Component {
                   <div style={{fontSize:"12px", marginBottom:"10px"}}>{this.props.position}</div>
                   <p style={{fontSize:"9px"}}>{this.props.description}</p>
                   <a href={this.props.link} >
-                  <button className="linkedin" style={{width:"100%", height:"27px", backgroundColor:"#336699", border:"none", color:"white", borderRadius:"8px"}}>
+                  <button className="linkedin" style={{width:"30%", height:"27px", backgroundColor:"#336699", border:"none", color:"white", borderRadius:"8px"}}>
                   <i className="fa fa-linkedin" style={{fontSize:"13px"}}></i>
                   </button></a>
                 </div>
               </div>
             </MediaQuery>
             <MediaQuery minWidth={321}>
-              <div className="col-7" style={{backgroundColor:"white", height:"100%", textAlign:"left", display:"table"}}>
-                <div style={{height:"100%", display:"table-cell", verticalAlign:"middle"}}>
-                  <span style={{fontSize:"15px"}}><b>Shantanu Gangal</b></span><br/>
-                  <div style={{fontSize:"12px", marginBottom:"10px"}}>Chief Executive Officer</div>
-                  <p style={{fontSize:"10px"}}>Head of Data & Analytics at Fundbox, San Francisco based SMB lender where he
-                  implemented novel collection strategies</p>
-                  <button style={{width:"100%", height:"27px", backgroundColor:"#336699", border:"none", color:"white", borderRadius:"3px"}}>
-                  <i className="fa fa-linkedin" style={{fontSize:"15px"}}></i>
-                  <span style={{fontSize:"11px"}}>&nbsp;&nbsp;Connect with Linkedin</span>
-                  </button>
-                </div>
+            <div className="col-7" style={{backgroundColor:"white", height:"100%", textAlign:"left", display:"table"}}>
+              <div style={{height:"100%", display:"table-cell", verticalAlign:"middle"}}>
+                <span style={{fontSize:"12px"}}><b>{this.props.name}</b></span><br/>
+                <div style={{fontSize:"12px", marginBottom:"10px"}}>{this.props.position}</div>
+                <p style={{fontSize:"9px"}}>{this.props.description}</p>
+                <div style={{textAlign:"center"}}>
+                <a href={this.props.link} >
+                <button className="linkedin" style={{width:"30%", height:"27px", backgroundColor:"#336699", border:"none", color:"white", borderRadius:"8px"}}>
+                <i className="fa fa-linkedin" style={{fontSize:"13px"}}></i>
+                </button></a></div>
               </div>
+            </div>
             </MediaQuery>
         </div>
         </div><br/><br/>

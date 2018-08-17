@@ -7,7 +7,7 @@ import SignUp from '../SignUp/SignUp';
 import Slide from '@material-ui/core/Slide';
 import './main.css';
 
-import img1 from '../../images/img1.jpg';
+import img1 from '../../images/home.png';
 
 function Transition(props) {
   return <Slide direction="up" {...props} />;
@@ -24,6 +24,7 @@ class Info extends Component {
   }
 
     handleClose = () => {
+      console.log(this.state.open);
       this.setState({ open: false });
     };
 
@@ -65,23 +66,24 @@ class Info extends Component {
       <div className="row inforow">
         <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
           <div style={{textAlign:"center", width:"100%"}}>
-            <img src={img1} style={{margin: "auto", width:"100%"}} height="580px" className="mainimg"/>
+            <img src={img1} className="mainimg"/>
           </div>
         </div>
         <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-          <div style={{height: "580px", display:"table"}} className="infodiv">
+          <div style={{display:"table"}} className="infodiv">
             <div style={{display: "table-cell", verticalAlign: "middle"}}>
-            <h1 className="infohead"><b>Lenders use Prodigal software to increase collections and improve service</b></h1>
+            <h1 className="infohead" style={{margin:"0px", padding:"0px"}}><b>
+            Lenders use Prodigal software to improve servicing and collections</b></h1>
             <br/>
             <div className="infosubhead">
-            <p>We help lenders reach borrowers on channels they choose.
+            <p style={{margin:"0px", marginBottom:"10px"}}>We help lenders reach borrowers on channels they choose.
             We generate an improvement of 20% in repayments.</p>
             </div>
             <br/>
             <div className="form-group mb-2">
-              <input ref="input1" type="email" className="col-md-8 col-lg-8 col-sm-12 col-xs-12" placeholder="  Email"
+              <input ref="input1" type="email" className="col-md-8 col-lg-8 col-sm-12 col-xs-12" placeholder="  Enter you work email"
               style={{width: "100%", height: "45px", backgroundColor:"#DDDDDD",color:"#ADADAD",
-              borderRadius:"8px", border:"none", margin:"20px 0px"}}/>
+              borderRadius:"8px", border:"none", marginBottom:"20px"}}/>
               <button type="submit" className="col-md-4 col-lg-4 col-sm-12 col-xs-12 btn ourbutton mx-3"
                style={{width: "150px", height: "45px", fontSize:"14px"}}
                onClick={this.check}><b>Sign Up For Free</b></button>
@@ -93,7 +95,6 @@ class Info extends Component {
           fullScreen
           open={this.state.open}
           onClose={this.handleClose}
-          TransitionComponent={Transition}
         >
           <SignUp handleClose={this.handleClose} email={this.state.email}/>
         </Dialog>

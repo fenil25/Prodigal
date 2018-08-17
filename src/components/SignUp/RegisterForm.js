@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'mdbreact';
 import MediaQuery from 'react-responsive';
+import Snackbar from '@material-ui/core/Snackbar';
+import 'react-toastify/dist/ReactToastify.css';
 import './sign.css';
 
 class RegisterForm extends React.Component  {
@@ -11,13 +13,26 @@ class RegisterForm extends React.Component  {
       name: '',
       email: props.email,
       phone: '',
-      company: ''
+      company: '',
     };
   }
 
   submitHandler = (event) => {
     event.preventDefault();
     event.target.className += ' was-validated';
+
+    if(event.target.checkValidity()){
+      console.log("hi");
+      this.props.handleClose();var elemDiv = document.createElement('div');
+      elemDiv.style.cssText = 'position:fixed;width:100vw;height:50px;z-index:1000;background:lightgreen;text-align:center;color:white;padding-top:10px;';
+      elemDiv.innerHTML="<h4>Thank You For Contacting Us. We will be in touch shortly.<h4>";
+      document.body.appendChild(elemDiv);
+      document.body.insertBefore(elemDiv, document.getElementById('root'));
+
+      setTimeout(function(){
+        elemDiv.remove();
+      }, 5000);
+    }
   }
 
   changeHandler = (event) => {

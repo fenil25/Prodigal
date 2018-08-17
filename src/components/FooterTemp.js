@@ -112,35 +112,35 @@ class FooterPage extends React.Component {
             </MediaQuery>
             <MediaQuery maxWidth={780}>
               <div style={{width:"100vw"}}>
-                <div style={{display: "table", height:"100%", backgroundColor:"#003366", textAlign:"center", padding:"30px"}}>
-                <div style={{display: "table-cell", verticalAlign: "middle"}}>
+                <div style={{backgroundColor:"#003366", textAlign:"center", padding:"10px 30px"}}>
+                <div style={{}}>
                   <span style={{color:"white", fontSize:"20px"}}>Want a 20% increase in your repayments?</span><br/>
-                  <span style={{color:"#AAA", fontSize:"14px"}}>Schedule a demo to see how our intelligent platform can help you benefit</span><br/><br/>
-                  <div className="form-group">
+                  <span style={{color:"#AAA", fontSize:"14px"}}>Schedule a demo to see how our intelligent platform can help you benefit</span>
+                  <div className="form-group mt-3">
                     <input ref="input1" type="email" className="col-md-8 col-lg-8 col-sm-12 col-xs-12 mb-3" placeholder="  Email"
-                      style={{width: "90%", height: "45px", backgroundColor:"#002244", color:"white", border:"none", borderRadius:"8px"}}/>
+                      style={{width: "90%", height: "30px", backgroundColor:"#002244", color:"white", border:"none", borderRadius:"8px"}}/>
                     <button type="submit" className="col-md-4 col-lg-4 col-sm-12 col-xs-12 btn ourbutton mx-3"
-                      style={{width: "150px", height: "45px", fontSize:"14px"}} onClick={this.check}>Sign Up For Free</button>
+                      style={{width: "150px", height: "30px", fontSize:"10px"}} onClick={this.check}>Sign Up For Free</button>
                   </div>
                 </div>
                 </div>
               </div>
               <div className="row" style={{backgroundColor: "#003366", width:"100vw"}}>
-                <div className="col-7" style={{backgroundColor:"#001122", padding:"30px"}}>
+                <div className="col-7" style={{backgroundColor:"#001122", padding:"10px 20px"}}>
                   <span style={{fontSize: "22px", color: "orange"}}><i>Prodigal</i></span>
-                  <div style={{color:"#DDD", fontSize:"14px"}} className="mt-4">
-                    <p>655 FairOaks,<br/>Sunnyvale, CA</p>
-                    <p>support@prodigaltech.com</p>
-                    <p>650-476-4XXX</p>
+                  <div style={{color:"#DDD", fontSize:"14px"}} className="mt-2">
+                    <p style={{margin:"0"}}>655 FairOaks,<br/>Sunnyvale, CA<br/>
+                    support@prodigaltech.com<br/>
+                    650-476-4XXX</p>
                   </div>
                 </div>
                 <div className="col-2">
-                  <div style={{color:"#FFF", fontSize:"12px"}} className="mt-4">
+                  <div style={{color:"#FFF", fontSize:"12px"}} className="mt-2">
                     <Link to="/" style={{color:"white", textDecoration:"none"}}><p>Home</p></Link>
                   </div>
                 </div>
                 <div className="col-3">
-                  <div style={{color:"#FFF", fontSize:"12px"}} className="mt-4">
+                  <div style={{color:"#FFF", fontSize:"12px"}} className="mt-2">
                     <Link to="/about" style={{color:"white", textDecoration:"none"}}><p>About Us</p></Link>
                     <Link to="/about" style={{color:"white", textDecoration:"none"}}><p>Investors</p></Link>
                   </div>
@@ -151,7 +151,6 @@ class FooterPage extends React.Component {
               fullScreen
               open={this.state.open}
               onClose={this.handleClose}
-              TransitionComponent={Transition}
             >
               <SignUp handleClose={this.handleClose} email={this.state.email}/>
             </Dialog>

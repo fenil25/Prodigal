@@ -7,18 +7,20 @@ class SignUpFact extends Component {
     return (
       <div className="row">
       <div className="col-sm-12 col-md-12 my-3">
-        <div style={{height: "33%"}}>
+        <div style={{}}>
           <div style={{textAlign:"left"}} className="row">
-            <img src={this.props.image} height="100px" width="100px" className="offset-2 col-3 mt-4"/>
+          <div className="offset-2 col-3 mt-4" style={{textAlign:"right"}}>
+            <img src={this.props.image} style={{height:"100px", width:"100px", padding:"0px"}}/>
+          </div>
             <MediaQuery maxWidth={780}>
-              <div className="col-5 mt-1">
-                <div className="signfacthead">{this.props.number}</div>
+              <div className="col-5 mt-5 ml-4">
+                <div className="signfacthead ourcolor">{this.props.number}</div>
                 <div className="signfactsubhead">{this.props.description}</div>
               </div>
             </MediaQuery>
             <MediaQuery minWidth={780}>
-              <div className="col-5 mt-3">
-                <div className="signfacthead">{this.props.number}</div>
+              <div className="col-5 mt-5">
+                <div className="signfacthead ourcolor">{this.props.number}</div>
                 <div className="signfactsubhead">{this.props.description}</div>
               </div>
             </MediaQuery>
