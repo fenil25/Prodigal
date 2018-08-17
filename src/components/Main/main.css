@@ -7,9 +7,11 @@
   font-weight: bold;
   color: #2B2B2B;
   padding: inherit;
-  padding-right: 20px;
+  padding: 12px 20px 12px 3px;
 }
-
+.si i{
+  color: #006DAA;
+}
 .desc h2{
   font-size: 32px;
 }
@@ -22,6 +24,10 @@
   cursor: pointer;
   font-weight: bold;
   color: #2B2B2B;
+}
+
+.list:hover i{
+  color: #006DAA;
 }
 
 .styleimage{
@@ -129,6 +135,10 @@
     box-shadow: 2px 4px 6px 0 rgba(0,0,0,0.2);
     font-weight: bold;
     color: #2B2B2B;
+    padding: 5px;
+  }
+  .si i{
+    color: #006DAA
   }
   .desc h2{
     padding-top: 20px;

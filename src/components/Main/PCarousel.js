@@ -10,6 +10,8 @@ import personalized from '../../images/carousel/personalized.png';
 import voice from '../../images/carousel/voice.png';
 import './main.css';
 
+import 'font-awesome/css/font-awesome.min.css';
+
 class PCarousel extends Component {
   constructor(props){
     super(props);
@@ -67,25 +69,36 @@ class PCarousel extends Component {
 
   render() {
     return (
-      <div className="row clearoverflow">
+      <div className="row clea/roverflow">
         <MediaQuery minWidth={780}>
           <div className="col-md-5 col-lg-5 col-sm-12 col-xs-12" style={{padding: "40px"}}>
-            <h2 style={{fontSize: "2vw", paddingBottom: "80px", paddingLeft:"20px", paddingTop:"40px"}} className="ourtext">Our Product Offerings</h2>
+            <h2 style={{fontSize: "2vw", paddingBottom: "80px", paddingLeft:"20px", paddingTop:"40px"}} className="ourtext">
+            Our Product Offerings</h2>
             <ul style={{fontSize: "1.56vw", listStyle: "none", padding: "0", margin:"0", color:"#787878", fontWeight:"bold"}}>
               <li onClick={this.changeImage.bind(this, 0)} style={{padding: "20px 0px 30px 20px"}} id="0" className="list">
-                {this.state.selectedItem==0 ? <span className="si">Omnichannel Engagement</span> : "Omnichannel Engagement"}
+                {this.state.selectedItem==0 ? <span className="si"><i className="fa fa-comments"></i>
+                &nbsp;  Omnichannel Engagement</span> : <span><i className="fa fa-comments"></i>
+                &nbsp;  Omnichannel Engagement</span>}
               </li>
               <li onClick={this.changeImage.bind(this, 1)} style={{padding: "20px 0px 30px 20px"}} id="1" className="list">
-                {this.state.selectedItem==1 ? <span className="si">Collection Models</span> : "Collection Models"}
+                {this.state.selectedItem==1 ? <span className="si"><i className="fa fa-bar-chart"></i>
+                &nbsp;Collection Models</span> : <span><i className="fa fa-bar-chart"></i>
+                &nbsp;Collection Models</span>}
               </li>
               <li onClick={this.changeImage.bind(this, 2)} style={{padding: "20px 0px 30px 20px"}} id="2" className="list">
-                {this.state.selectedItem==2 ? <span className="si">Process Payments</span> : "Process Payments"}
+                {this.state.selectedItem==2 ? <span className="si"><i className="fa fa-usd"></i>
+                &nbsp;Process Payments</span> : <span><i className="fa fa-usd"></i>
+                &nbsp;Process Payments</span>}
               </li>
               <li onClick={this.changeImage.bind(this, 3)} style={{padding: "20px 0px 30px 20px"}} id="3" className="list">
-                {this.state.selectedItem==3 ? <span className="si">Personalized Approach</span> : "Personalized Approach"}
+                {this.state.selectedItem==3 ? <span className="si"><i className="fa fa-users"></i>
+                &nbsp;Personalized Aoproach</span> : <span><i className="fa fa-users"></i>
+                &nbsp;Personalized Approach</span>}
               </li>
               <li onClick={this.changeImage.bind(this, 4)} style={{padding: "20px 0px 30px 20px"}} id="4" className="list">
-                {this.state.selectedItem==4 ? <span className="si">Voice Analytics</span> : "Voice Analytics"}
+                {this.state.selectedItem==4 ? <span className="si"><i className="fa fa-microphone"></i>
+                &nbsp;Voice Analytics</span> : <span><i className="fa fa-microphone"></i>
+                &nbsp;Voice Analytics</span>}
               </li>
             </ul>
           </div>
@@ -126,21 +139,31 @@ class PCarousel extends Component {
           <div className="col-md-5 col-lg-5 col-sm-12 col-xs-12" style={{padding: "40px 50px"}}>
             <h2 style={{fontSize: "27px", fontStyle: "italic", paddingBottom: "20px"}}>Our Product Offerings</h2>
             <ul style={{fontSize: "16px", listStyle: "none", padding: "0", margin:"0", fontWeight:"bold", color:"#787878"}} className="row">
-              <li onClick={this.changeImage.bind(this, 0)} style={{padding: "10px"}} id="0" className="list col-6">
-                {this.state.selectedItem==0 ? <div className="si">Omnichannel Engagement</div> : "Omnichannel Engagement"}
-              </li>
-              <li onClick={this.changeImage.bind(this, 1)} style={{padding: "10px"}} id="1" className="list col-6">
-                {this.state.selectedItem==1 ? <div className="si">Collection Models</div> : "Collection Models"}
-              </li>
-              <li onClick={this.changeImage.bind(this, 2)} style={{padding: "10px"}} id="2" className="list col-6">
-                {this.state.selectedItem==2 ? <div className="si">Process Payments</div> : "Process Payments"}
-              </li>
-              <li onClick={this.changeImage.bind(this, 3)} style={{padding: "10px"}} id="3" className="list col-6">
-                {this.state.selectedItem==3 ? <div className="si">Personalized Approach</div> : "Personalized Approach"}
-              </li>
-              <li onClick={this.changeImage.bind(this, 4)} style={{padding: "10px"}} id="4" className="list col-6">
-                {this.state.selectedItem==4 ? <div className="si">Voice Analytics</div> : "Voice Analytics"}
-              </li>
+            <li onClick={this.changeImage.bind(this, 0)} style={{padding: "10px"}} id="0" className="list col-6">
+              {this.state.selectedItem==0 ? <div className="si"><i className="fa fa-comments"></i>
+              &nbsp;  Omnichannel Engagement</div> : <div><i className="fa fa-comments"></i>
+              &nbsp;  Omnichannel Engagement</div>}
+            </li>
+            <li onClick={this.changeImage.bind(this, 1)} style={{padding: "10px"}} id="1" className="list col-6">
+              {this.state.selectedItem==1 ? <div className="si"><i className="fa fa-bar-chart"></i>
+              &nbsp;Collection Models</div> : <div><i className="fa fa-bar-chart"></i>
+              &nbsp;Collection Models</div>}
+            </li>
+            <li onClick={this.changeImage.bind(this, 2)} style={{padding: "10px"}} id="2" className="list col-6">
+              {this.state.selectedItem==2 ? <div className="si"><i className="fa fa-usd"></i>
+              &nbsp;Process Payments</div> : <div><i className="fa fa-usd"></i>
+              &nbsp;Process Payments</div>}
+            </li>
+            <li onClick={this.changeImage.bind(this, 3)} style={{padding: "10px"}} id="3" className="list col-6">
+              {this.state.selectedItem==3 ? <div className="si"><i className="fa fa-users"></i>
+              &nbsp;Personalized Aoproach</div> : <div><i className="fa fa-users"></i>
+              &nbsp;Personalized Approach</div>}
+            </li>
+            <li onClick={this.changeImage.bind(this, 4)} style={{padding: "10px"}} id="4" className="list col-6">
+              {this.state.selectedItem==4 ? <div className="si"><i className="fa fa-microphone"></i>
+              &nbsp;Voice Analytics</div> : <div><i className="fa fa-microphone"></i>
+              &nbsp;Voice Analytics</div>}
+            </li>
             </ul>
           </div>
           <div className="col-md-7 col-sm-12 col-xs-12" style={{padding:"0px 25px 30px 25px", textAlign:"center"}}>
