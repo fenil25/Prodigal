@@ -16,12 +16,18 @@ class PCarousel extends Component {
   constructor(props){
     super(props);
     this.state={
-      selectedItem: 0
+      selectedItem: 0,
+      autoRotate: true,
+      time: 4000,
     }
   }
 
   changeImage(k){
-      this.setState({selectedItem: k});
+
+    if(this.state.autoRotate){
+      this.setState({autoRotate:false, selectedItem: k});
+    }
+    this.setState({selectedItem:k});
   }
 
   display() {
@@ -30,7 +36,7 @@ class PCarousel extends Component {
       return(
         <div>
           <h2><b>Omnichannel Engagement</b></h2>
-          <p>Engage borrower on channel of her choice</p>
+          <p>Engage borrower on channel of her choice. Provide agents a single interface for all communication.</p>
         </div>
       );
     }else if(s==1){
@@ -92,7 +98,7 @@ class PCarousel extends Component {
               </li>
               <li onClick={this.changeImage.bind(this, 3)} style={{padding: "20px 0px 30px 20px"}} id="3" className="list">
                 {this.state.selectedItem==3 ? <span className="si"><i className="fa fa-users"></i>
-                &nbsp;Personalized Aoproach</span> : <span><i className="fa fa-users"></i>
+                &nbsp;Personalized Approach</span> : <span><i className="fa fa-users"></i>
                 &nbsp;Personalized Approach</span>}
               </li>
               <li onClick={this.changeImage.bind(this, 4)} style={{padding: "20px 0px 30px 20px"}} id="4" className="list">
@@ -103,29 +109,41 @@ class PCarousel extends Component {
             </ul>
           </div>
           <div className="col-md-7 col-sm-12 col-xs-12" style={{padding:"50px"}}>
-            {/*<Carousel showThumbs={false} selectedItem={this.state.selectedItem} showArrows={false} showIndicators={false} style={{width:"700px"}}>
+          { this.state.autoRotate ?
+              <Carousel showThumbs={false} autoPlay={true}
+            infiniteLoop={true}
+            showArrows={false} showIndicators={false} statusFormatter={
+              (current, total) => {
+                if(this.state.autoRotate && this.state.selectedItem!=current-1)
+                  {this.setState({selectedItem: current-1});}
+              }
+            } selectedItem={this.state.selectedItem} >
                 <div>
-                    <img src={omnichannel} style={{width:"49.48vw", height:"520px", minWidth:"300px"}}/>
+                    <img src={omnichannel} className="styleimage"/>
                 </div>
                 <div>
-                    <img src={portfolio} style={{width:"49.48vw", height:"520px", minWidth:"300px"}}/>
+                    <img src={portfolio} className="styleimage"/>
                 </div>
                 <div>
-                    <img  src={payment} style={{width:"49.48vw", height:"520px", minWidth:"300px"}}/>
+                    <img  src={payment} className="styleimage"/>
                 </div>
                 <div>
-                    <img src={personalized} style={{width:"49.48vw", height:"520px", minWidth:"300px"}}/>
+                    <img src={personalized} className="styleimage"/>
                 </div>
                 <div>
-                    <img src={voice} style={{width:"49.48vw", height:"520px", minWidth:"300px"}}/>
+                    <img src={voice} className="styleimage"/>
                 </div>
-            </Carousel>*/}
-            {this.state.selectedItem==0 ? <img src={omnichannel} className="styleimage"/> : null}
-            {this.state.selectedItem==1 ? <img src={portfolio} className="styleimage"/> : null}
-            {this.state.selectedItem==2 ? <img src={payment} className="styleimage"/> : null}
-            {this.state.selectedItem==3 ? <img src={personalized} className="styleimage"/> : null}
-            {this.state.selectedItem==4 ? <img src={voice} className="styleimage"/> : null}
-            <div className="mt-4 desc" style={{width:"100%", textAlign:"left", paddingLeft:"100px"}}>
+            </Carousel> :
+            <div>
+              {this.state.selectedItem==0 ? <img src={omnichannel} className="styleimage"/> : null}
+              {this.state.selectedItem==1 ? <img src={portfolio} className="styleimage"/> : null}
+              {this.state.selectedItem==2 ? <img src={payment} className="styleimage"/> : null}
+              {this.state.selectedItem==3 ? <img src={personalized} className="styleimage"/> : null}
+              {this.state.selectedItem==4 ? <img src={voice} className="styleimage"/> : null}
+            </div>
+          }
+
+            <div className="mt-4 desc" style={{width:"100%", textAlign:"left", paddingLeft:"40px", height: "100px"}}>
               {this.display()}
             </div>
             <br/>
@@ -167,28 +185,39 @@ class PCarousel extends Component {
             </ul>
           </div>
           <div className="col-md-7 col-sm-12 col-xs-12" style={{padding:"0px 25px 30px 25px", textAlign:"center"}}>
-            {/*<Carousel showThumbs={false} selectedItem={this.state.selectedItem} showArrows={false} showIndicators={false}>
+          { this.state.autoRotate ?
+              <Carousel showThumbs={false} autoPlay={true}
+            infiniteLoop={true}
+            showArrows={false} showIndicators={false} statusFormatter={
+              (current, total) => {
+                if(this.state.autoRotate && this.state.selectedItem!=current-1)
+                  {this.setState({selectedItem: current-1});}
+              }
+            } selectedItem={this.state.selectedItem} >
                 <div>
-                    <img src={omnichannel} style={{width:"49.48vw", height:"520px", minWidth:"270px"}}/>
+                    <img src={omnichannel} className="styleimage"/>
                 </div>
                 <div>
-                    <img src={portfolio} style={{width:"49.48vw", height:"520px", minWidth:"270px"}}/>
+                    <img src={portfolio} className="styleimage"/>
                 </div>
                 <div>
-                    <img  src={payment} style={{width:"49.48vw", height:"520px", minWidth:"270px"}}/>
+                    <img  src={payment} className="styleimage"/>
                 </div>
                 <div>
-                    <img src={personalized} style={{width:"49.48vw", height:"520px", minWidth:"270px"}}/>
+                    <img src={personalized} className="styleimage"/>
                 </div>
                 <div>
-                    <img src={voice} style={{width:"49.48vw", height:"520px", minWidth:"270px"}}/>
+                    <img src={voice} className="styleimage"/>
                 </div>
-            </Carousel>*/}
-            {this.state.selectedItem==0 ? <img src={omnichannel} className="styleimage"/> : null}
-            {this.state.selectedItem==1 ? <img src={portfolio} className="styleimage"/> : null}
-            {this.state.selectedItem==2 ? <img src={payment} className="styleimage"/> : null}
-            {this.state.selectedItem==3 ? <img src={personalized} className="styleimage"/> : null}
-            {this.state.selectedItem==4 ? <img src={voice} className="styleimage"/> : null}
+            </Carousel> :
+            <div>
+              {this.state.selectedItem==0 ? <img src={omnichannel} className="styleimage"/> : null}
+              {this.state.selectedItem==1 ? <img src={portfolio} className="styleimage"/> : null}
+              {this.state.selectedItem==2 ? <img src={payment} className="styleimage"/> : null}
+              {this.state.selectedItem==3 ? <img src={personalized} className="styleimage"/> : null}
+              {this.state.selectedItem==4 ? <img src={voice} className="styleimage"/> : null}
+            </div>
+          }
             <br/>
             <div class="desc" style={{fontSize:"16px"}}>
               {this.display()}

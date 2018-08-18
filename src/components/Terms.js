@@ -5,7 +5,7 @@ class Terms extends Component {
     return (
       <div className="container mt-5">
 
-      <h4 data-reactid="26">Prodigal, Inc. Terms of Use</h4><p data-reactid="27">Effective Date: April 10th 2017</p>
+      <h4 data-reactid="26">Prodigal Technology, Inc. Terms of Use</h4><p data-reactid="27">Effective Date: April 10th 2017</p>
       <div data-reactid="28"><div class="content nopad-side"
       style={{fontWeight: "300px"}}>
   <p>This Terms of Service constitutes a legally binding agreement between you (“you” or “Subscriber”)

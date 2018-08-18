@@ -5,14 +5,14 @@ class Policy extends Component {
     return (
       <div className="container mt-5">
       <div>
-            <h4 data-reactid="26">Prodigal, Inc. Privacy Policy</h4>
+            <h4 data-reactid="26">Prodigal Technology, Inc. Privacy Policy</h4>
             <p data-reactid="27">Effective Date: April 10th 2017</p>
             <div data-reactid="28"><div class="content nopad-side" style={{fontWeight: "300px"}}>
               <p><strong>We recognize that your privacy is very important</strong>.&nbsp;This privacy policy covers Prodigal’s policies on the collection, use, and disclosure of your information when you use access and initiate transactions www.regoglogy.com
               (the “Platform”) and the software, services and content made available through the Platform (collectively
                 the “Services”).</p>
         <p>Each time you use the Platform, you consent to the collection, use and storage of the collected information as described
-          in this Privacy Policy.&nbsp;&nbsp; Please read it carefully and contact us at <a target="#" href="mailto:support@prodigal.com">support@prodigal.com</a> if you have any
+          in this Privacy Policy.&nbsp;&nbsp; Please read it carefully and contact us at <a target="#" href="mailto:support@prodigaltech.com">support@prodigaltech.com</a> if you have any
           questions.</p>
         <ol>
           <li><strong> What Information Is Collected And How Is It Used?</strong></li>
@@ -61,7 +61,7 @@ class Policy extends Component {
         </ol>
         <p>We do not knowingly collect information from persons under the age of 13.&nbsp; Users must be at least 18 years of
           age to register an account on the Platform. If a parent or guardian becomes aware that his or her child has provided
-          us with information without their consent, he or she should contact us at <a target="#" href="mailto:support@prodigal.com">support@prodigal.com</a>.
+          us with information without their consent, he or she should contact us at <a target="#" href="mailto:support@prodigaltech.com">support@prodigaltech.com</a>.
           We will delete such information from our files within a commercially reasonable time.</p>
         <ol start="4">
           <li><strong> What is Prodigal’s Security Policy? </strong></li>
@@ -87,7 +87,7 @@ class Policy extends Component {
           <li><strong> Contact Us</strong></li>
         </ol>
         <p>If you have any questions regarding privacy while using the Platform or have questions about our practices, please
-          contact us via email at <a target="#" href="mailto:support@prodigal.com">support@prodigal.com</a></p>
+          contact us via email at <a target="#" href="mailto:support@prodigaltech.com">support@prodigaltech.com</a></p>
 </div>
 </div>
 </div>

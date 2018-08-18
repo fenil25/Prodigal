@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {a} from 'react-router-dom';
 import MediaQuery from 'react-responsive';
+import 'font-awesome/css/font-awesome.min.css';
 
 class Copyrights extends Component {
   render() {
@@ -8,7 +9,7 @@ class Copyrights extends Component {
       <div>
       <MediaQuery minWidth={781}>
         <div style={{backgroundColor: "#111", color:"#EEE", height:"70px", paddingLeft:"10px", paddingTop: "10px"}} className="row">
-          <div className="col-3" style={{textAlign:"left"}}><br/>@Copyrights reserved by ProdicalTech.</div>
+          <div className="col-3" style={{textAlign:"left"}}><br/><i class="fa fa-copyright" aria-hidden="true"></i>Prodigal Technologies Inc, 2018</div>
           <div className="col-3" style={{textAlign:"center"}}>
             <a href="/" style={{color:"white"}}><span>Home</span></a><br/>
             <a href="/about" style={{color:"white"}}><span>About Us</span></a>
@@ -29,7 +30,7 @@ class Copyrights extends Component {
           <a href="/terms&conditions" style={{color:"white"}}><span>Terms</span></a><br/>
           <a href="/privacypolicy" style={{color:"white"}}><span>Privacy</span></a><br/><br/>
           <div style={{fontSize:"12px"}}>support@prodigaltech.com</div><br/>
-          <div style={{fontSize:"10px"}}>@Copyrights reserved by ProdicalTech.</div>
+          <div style={{fontSize:"10px"}}><i class="fa fa-copyright" aria-hidden="true"></i>Prodigal Technologies Inc, 2018</div>
         </div>
       </MediaQuery>
       </div>

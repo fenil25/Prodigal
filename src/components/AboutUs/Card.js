@@ -32,7 +32,7 @@ class Card extends Component {
           <div className="col-10 offset-1 row" style={{height:"200px", backgroundColor:"white"}}>
             <div className="col-4" style={{padding:"0", margin:"0", display:"table", height:"100%"}}>
               <div style={{backgroundColor:"white", height:"100%",display:"table-cell", verticalAlign:"middle"}}>
-                <img src={this.props.image} alt="Avatar" style={{borderRadius: "50%", width:"120px", height:"120px"}}/>
+                <img src={this.props.image} alt="Avatar" style={{borderRadius: "50%", width:"90px", height:"90px"}}/>
               </div>
             </div>
             <MediaQuery maxWidth={321}>
