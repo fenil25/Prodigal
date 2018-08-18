@@ -65,7 +65,7 @@ class Info extends Component {
     return (
       <div className="row inforow">
         <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-          <div style={{textAlign:"center", width:"100%"}}>
+          <div style={{textAlign:"center", width:"100%"}} className="inf">
             <img src={img1} className="mainimg"/>
           </div>
         </div>

@@ -44,7 +44,7 @@ opensnackbar = () => {
       <MediaQuery minWidth={780}>
       <nav class="navbar navbar-expand-lg navbar-light" style={{backgroundColor: "#006DAA"}}>
         <Link to="/" class="navbar-brand"
-        style={{fontSize: "34px", fontStyle: "italic", color:"white", paddingLeft:"50px",
+        style={{fontSize: "34px", color:"white", paddingLeft:"50px",
         textDecoration:"none", fontFamily:"'Tienne', serif"}}>Prodigal</Link>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -65,7 +65,7 @@ opensnackbar = () => {
         <div className="clearfix" style={{backgroundColor:"#006DAA"}}>
           <div className="float-left" style={{display:"table"}}>
             <Link to="/"
-            style={{fontSize: "23px", fontStyle: "italic", color:"white", display: "table-cell",
+            style={{fontSize: "23px", color:"white", display: "table-cell",
             verticalAlign: "middle", paddingLeft:"18px", textDecoration:"none", fontFamily:"'Tienne', serif"}} >Prodigal</Link>
           </div>
           <div style={{fontSize: "10px"}} className="mt-2 float-right">

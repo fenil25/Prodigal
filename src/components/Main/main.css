@@ -15,7 +15,9 @@
 .desc h2{
   font-size: 32px;
 }
-
+i{
+  width: 30px;
+}
 .desc{
   font-size: 26px;
 }
@@ -90,7 +92,14 @@
   margin: 0px 50px 30px 0px;
 }
 
+.inf{
+  height: 80vh;
+}
+
 @media (max-width: 780px){
+  .inf{
+    height: auto;
+  }
   .mainimg{
     width: 300px;
     height: 224px;

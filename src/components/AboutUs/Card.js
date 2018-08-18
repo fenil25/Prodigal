@@ -9,15 +9,15 @@ class Card extends Component {
       <div>
       <MediaQuery minWidth={780}>
         <div style={{width:"26.56vw", minWidth:"300px", boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
-        borderRadius: "30px", backgroundColor:"#FFF", margin:"auto", height:"900px"}}>
+        borderRadius: "30px", backgroundColor:"#FFF", margin:"auto", height:"600px"}}>
           <div style={{padding: "0px 50px"}}>
-            <img src={this.props.image} alt="Avatar" style={{borderRadius: "50%", padding:"50px 0", width:"100%", height:"26.56vw", minHeight:"300px"}}/>
+            <img src={this.props.image} alt="Avatar"
+            style={{borderRadius: "50%", width:"16vw", height:"16vw",marginTop:"20px", minHeight:"240px", minWidth:"240px"}}/>
             <div style={{textAlign:"center", paddingBottom: "50px",}}>
-            <div style={{height:"400px"}}>
-              <span style={{fontSize:"32px"}}><b>{this.props.name}</b></span><br/>
-              <div style={{fontSize:"28px",marginBottom:"50px"}}>{this.props.position}</div>
-
-              <p style={{fontSize:"20px", marginBottom:"50px"}}>{this.props.description}</p>
+            <div style={{height:"250px"}}>
+              <span style={{fontSize:"28px"}}><b>{this.props.name}</b></span><br/>
+              <div style={{fontSize:"22px",marginBottom:"10px"}}>{this.props.position}</div>
+              <p style={{fontSize:"16px", marginBottom:"50px"}}>{this.props.description}</p>
             </div>
               <a href={this.props.link}><button className="linkedin"
               style={{width:"80px", height:"50px", backgroundColor:"#336699", border:"none", color:"white", borderRadius:"8px"}}>

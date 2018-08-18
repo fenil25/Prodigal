@@ -4,6 +4,7 @@ import MediaQuery from 'react-responsive';
 import Snackbar from '@material-ui/core/Snackbar';
 import 'react-toastify/dist/ReactToastify.css';
 import './sign.css';
+import 'font-awesome/css/font-awesome.min.css';
 
 class RegisterForm extends React.Component  {
   constructor(props){
@@ -23,20 +24,31 @@ class RegisterForm extends React.Component  {
 
     if(event.target.checkValidity()){
       console.log("hi");
-      this.props.handleClose();var elemDiv = document.createElement('div');
-      elemDiv.style.cssText = 'position:fixed;width:100vw;height:50px;z-index:1000;background:lightgreen;text-align:center;color:white;padding-top:10px;';
-      elemDiv.innerHTML="<h4>Thank You For Contacting Us. We will be in touch shortly.<h4>";
+
+      this.props.handleClose();
+
+      var elemDiv = document.createElement('div');
+      elemDiv.style.cssText = `height:0px;webkit-transition:all 0.5s;transition:all 0.5s;position:fixed;width:100vw;height:0px;z-index:1000;
+      display:inline;background:#33CC33;text-align:center;padding:10px;font-size:16px;`;
+      elemDiv.style.height= "35px";
+      elemDiv.innerHTML=`<i class="fa fa-check-circle-o" aria-hidden="true"></i><span> Thank You For Contacting Us. We will be in touch shortly.<span>`;
       document.body.appendChild(elemDiv);
       document.body.insertBefore(elemDiv, document.getElementById('root'));
 
       setTimeout(function(){
-        elemDiv.remove();
+        elemDiv.style.height="0px";
+        elemDiv.style.padding="0px";
+        elemDiv.innerHTML="";
       }, 5000);
+
+      setTimeout(function(){
+        elemDiv.remove();
+      }, 8000);
     }
   }
 
   changeHandler = (event) => {
-    this.setState({...this.state, [event.target.name]: event.target.value})
+    this.setState({...this.state, [event.target.name]: event.target.value});
   }
 
   render() {

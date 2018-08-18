@@ -30,35 +30,35 @@ class PCarousel extends Component {
       return(
         <div>
           <h2><b>Omnichannel Engagement</b></h2>
-          <p>Engage borrower on channel of her choice.</p>
+          <p>Engage borrower on channel of her choice</p>
         </div>
       );
     }else if(s==1){
       return(
         <div>
           <h2><b>Collection Models</b></h2>
-          <p>Prioritize accounts and improve total portfolio value.</p>
+          <p>Prioritize accounts and improve total portfolio value</p>
         </div>
       );
     }else if(s==2){
       return(
         <div>
           <h2><b>Process Payments</b></h2>
-          <p>Manage payments, adjustments and reconciliation.</p>
+          <p>Manage payments, adjustments and reconciliation</p>
         </div>
       );
     }else if(s==3){
       return(
         <div>
         <h2><b>Personalized Approach</b></h2>
-        <p>Account for borrower's life situation.</p>
+        <p>Account for borrower's life situation</p>
         </div>
       );
     }else if(s==4){
       return(
         <div>
         <h2><b>Voice Analytics</b></h2>
-        <p>Analyze calls for compliance checks & agent training.</p>
+        <p>Analyze calls for compliance checks & agent training</p>
         </div>
       );
     }
@@ -69,9 +69,9 @@ class PCarousel extends Component {
 
   render() {
     return (
-      <div className="row clea/roverflow">
+      <div className="row clearoverflow">
         <MediaQuery minWidth={780}>
-          <div className="col-md-5 col-lg-5 col-sm-12 col-xs-12" style={{padding: "40px"}}>
+          <div className="col-md-5 col-lg-5 col-sm-12 col-xs-12" style={{padding: "40px 0px 40px 100px"}}>
             <h2 style={{fontSize: "2vw", paddingBottom: "80px", paddingLeft:"20px", paddingTop:"40px"}} className="ourtext">
             Our Product Offerings</h2>
             <ul style={{fontSize: "1.56vw", listStyle: "none", padding: "0", margin:"0", color:"#787878", fontWeight:"bold"}}>
@@ -125,7 +125,7 @@ class PCarousel extends Component {
             {this.state.selectedItem==2 ? <img src={payment} className="styleimage"/> : null}
             {this.state.selectedItem==3 ? <img src={personalized} className="styleimage"/> : null}
             {this.state.selectedItem==4 ? <img src={voice} className="styleimage"/> : null}
-            <div className="mt-4 desc" style={{width:"100%", textAlign:"center"}}>
+            <div className="mt-4 desc" style={{width:"100%", textAlign:"left", paddingLeft:"100px"}}>
               {this.display()}
             </div>
             <br/>

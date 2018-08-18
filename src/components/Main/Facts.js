@@ -12,7 +12,7 @@ class Main extends Component {
       <div className="row" style={{margin:"0px"}}>
         <FactBox image={vendor} number="10+" description="Lenders working with us"/>
           <FactBox image={conv} number="50,000+" description="Borrower Conversations"/>
-        <FactBox image={growth} number="20%" description="Lift in repayment for lenders"/>
+        <FactBox image={growth} number="20%" description=" &nbsp;Lift in repayments"/>
         </div>
       </div>
     );
