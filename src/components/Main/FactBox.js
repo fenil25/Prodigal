@@ -14,18 +14,20 @@ class FactBox extends Component {
         (matches)=>{
           if(matches){
             return(
-                <div className="col-md-4" style={{height:"100%", display:"table"}}>
+                <div className="col-md-4">
+                <div style={{height:"100%", display:"table", margin:"auto"}}>
                   <div style={{textAlign:"center", display: "table-cell", verticalAlign: "middle", paddingTop:"14%"}}>
                     <img src={this.props.image} height="150px" width="150px"/>
                     <div style={{width: "280px", height: "100px", margin: "auto",display:"table"}} className="row">
                       <div style={{display: "table-cell", verticalAlign: "middle"}}>
-                        <span className="ourcolor" style={{fontSize: "54px"}}>{this.props.number}</span>
+                        <span className="ourcolor" style={{fontSize: "50px", marginRight:"10px"}}>{this.props.number}</span>
                       </div>
-                      <div style={{display: "table-cell", verticalAlign: "middle"}}>
-                        <span style={{fontSize: "20px"}}>{this.props.description}</span>
+                      <div style={{display: "table-cell", verticalAlign: "middle", textAlign:"left"}}>
+                        <span style={{fontSize: "18px"}}>{this.props.description}</span>
                       </div>
                     </div>
                   </div>
+                </div>
                 </div>
             );
           }else{

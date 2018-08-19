@@ -10,9 +10,9 @@ class Main extends Component {
     return (
       <div style={{minHeight:"375px", backgroundColor: "#EEEEEE", width:"100vw"}}>
       <div className="row" style={{margin:"0px"}}>
-        <FactBox image={vendor} number="10+" description="Lenders working with us"/>
-          <FactBox image={conv} number="50,000+" description="Borrower Conversations"/>
-        <FactBox image={growth} number="20%" description=" &nbsp;Lift in repayments"/>
+        <FactBox className="col" image={vendor} number="10+" description="Lenders working with us"/>
+          <FactBox className="col" image={conv} number="50,000+" description="Borrower Conversations"/>
+        <FactBox className="col" image={growth} number="20%" description="Lift in repayments"/>
         </div>
       </div>
     );

@@ -77,9 +77,9 @@ class FooterForm extends React.Component {
               <span style={{color:"white", fontSize:"28px", padding:"0px 15px"}}>Want a 20% increase in your repayments?</span><br/>
             </MediaQuery>
             <MediaQuery minWidth={780}>
-              <div className="mx-5">
-              <span style={{color:"#FFF", fontSize:"30px"}}>Want a 20% increase in your repayments?</span><br/>
-              <span style={{color:"#BCBCBC", fontSize:"19px"}}>Schedule a demo to see how our intelligent platform can help you benefit</span>
+              <div className="mx-1">
+              <span style={{color:"#FFF", fontSize:"24px"}}>Want a 20% increase in your repayments?</span><br/>
+              <span style={{color:"#BCBCBC", fontSize:"16px"}}>Schedule a demo to see how our intelligent platform can help you benefit</span>
               </div>
             </MediaQuery>
           </div>
@@ -89,7 +89,7 @@ class FooterForm extends React.Component {
             <div className="mb-2 form-group" style={{display:"inline"}}>
               <input ref="input1" type="email" className="col-md-8 col-lg-8 col-sm-12 col-xs-12 inputbox" placeholder="  Enter your work email"
               style={{width: "100%", height: "45px", backgroundColor:"#4F4F4F", color:"white", border:"none", borderRadius:"8px"}}/>
-              <button type="submit" className="col-md-4 col-lg-4 col-sm-12 col-xs-12 btn ourbutton mx-3 gsff"
+              <button type="submit" className="btn ourbutton mx-3 gsff"
               style={{height: "45px", fontSize:"14px"}} onClick={this.check}>Get Started For Free</button>
             </div>
           </div>

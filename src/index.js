@@ -4,6 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
+window.Intercom("boot", {
+app_id: "cnmmydox"
+})
+
 ReactDOM.render(
   <BrowserRouter>
     <App/>

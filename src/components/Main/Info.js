@@ -84,7 +84,7 @@ class Info extends Component {
               <input ref="input1" type="email" className="col-md-8 col-lg-8 col-sm-12 col-xs-12" placeholder="  Enter you work email"
               style={{width: "100%", height: "45px", backgroundColor:"#DDDDDD",color:"#444444",
               borderRadius:"8px", border:"none", marginBottom:"20px"}}/>
-              <button type="submit" className="col-md-4 col-lg-4 col-sm-12 col-xs-12 btn ourbutton suf mx-3"
+              <button type="submit" className="btn ourbutton suf mx-3"
                style={{height: "45px", fontSize:"14px"}}
                onClick={this.check}><b>Sign Up For Free</b></button>
             </div>

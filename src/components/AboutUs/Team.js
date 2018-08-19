@@ -8,7 +8,7 @@ import saransh from '../../images/team/saransh.jpg';
 class Team extends Component {
   render() {
     return (
-      <div style={{backgroundColor:"#DDD", textAlign:"center", paddingBottom:"100px"}}>
+      <div style={{backgroundColor:"#DDD", textAlign:"center", paddingBottom:"100px", overflow:"hidden"}}>
         <h1 style={{fontSize:"35px", padding:"40px 0px", margin:"0px"}} className="ourtext"><b>Our Team</b></h1>
         <div className="row">
           <div className="col-md-4">

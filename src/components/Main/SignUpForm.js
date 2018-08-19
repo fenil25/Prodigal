@@ -62,7 +62,7 @@ class SignUpForm extends Component {
     };
 
     return (
-      <div style={{width:"100vw"}}>
+      <div style={{width:"100vw", overflowX:"hidden"}}>
       <div className="row hform" style={{backgroundColor:"#353535"}}>
         <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12 hform redheight" style={{display: "table"}}>
           <div style={{display: "table-cell", verticalAlign: "middle", textAlign: "center"}}>

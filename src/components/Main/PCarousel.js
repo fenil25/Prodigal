@@ -154,9 +154,9 @@ class PCarousel extends Component {
 
 
         <MediaQuery maxWidth={780}>
-          <div className="col-md-5 col-lg-5 col-sm-12 col-xs-12" style={{padding: "40px 50px"}}>
+          <div style={{padding: "40px 40px"}}>
             <h2 style={{fontSize: "27px", fontStyle: "italic", paddingBottom: "20px"}}>Our Product Offerings</h2>
-            <ul style={{fontSize: "16px", listStyle: "none", padding: "0", margin:"0", fontWeight:"bold", color:"#787878"}} className="row">
+            <ul style={{fontSize: "13px", listStyle: "none", padding: "0", margin:"0", fontWeight:"bold", color:"#787878"}} className="row">
             <li onClick={this.changeImage.bind(this, 0)} style={{padding: "10px"}} id="0" className="list col-6">
               {this.state.selectedItem==0 ? <div className="si"><i className="fa fa-comments"></i>
               &nbsp;  Omnichannel Engagement</div> : <div><i className="fa fa-comments"></i>
@@ -219,7 +219,7 @@ class PCarousel extends Component {
             </div>
           }
             <br/>
-            <div class="desc" style={{fontSize:"16px"}}>
+            <div className="desc" style={{fontSize:"16px"}}>
               {this.display()}
             </div>
           </div>
