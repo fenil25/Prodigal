@@ -35,7 +35,7 @@ class SignUp extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.root}>
+      <div className={classes.root} style={{width:"100vw", overflowX:"hidden"}}>
       <MediaQuery minWidth={780}>
       <i className="fa fa-times float-right fa-5x m-5 exit" style={{fontSize:"50px", color:"#777"}} onClick={this.props.handleClose}></i>
         <div className="mx-5 mt-3 row">

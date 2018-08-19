@@ -139,7 +139,7 @@ class RegisterForm extends React.Component  {
           <Row className="pt-1" style={{textAlign:"center", padding:"0", margin:"0"}}>
             <Col>
               <form className='needs-validation' onSubmit={this.submitHandler} noValidate>
-              <Row style={{padding:"0", margin:"0"}} style={{width:"100%"}}>
+              <Row style={{width:"100%", margin:"auto", padding:"0px", textAlign:"center"}}>
                 <div className="col-12 my-3 row labelclass">
                   <label htmlFor="defaultFormRegisterNameEx"
                   className="grey-text col-md-4 col-lg-4 col-sm-12 col-xs-12 labelclass">Full Name *</label>
