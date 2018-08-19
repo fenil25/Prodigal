@@ -5,10 +5,10 @@ class Policy extends Component {
     return (
       <div className="container mt-5">
       <div>
-            <h4 data-reactid="26">Prodigal Technology, Inc. Privacy Policy</h4>
-            <p data-reactid="27">Effective Date: April 10th 2017</p>
+            <h4 data-reactid="26">Prodigal Technologies, Inc. Privacy Policy</h4>
+            <p data-reactid="27">Effective Date: April 10th 2018</p>
             <div data-reactid="28"><div class="content nopad-side" style={{fontWeight: "300px"}}>
-              <p><strong>We recognize that your privacy is very important</strong>.&nbsp;This privacy policy covers Prodigal’s policies on the collection, use, and disclosure of your information when you use access and initiate transactions www.regoglogy.com
+              <p><strong>We recognize that your privacy is very important</strong>.&nbsp;This privacy policy covers Prodigal’s policies on the collection, use, and disclosure of your information when you use access and initiate transactions www.prodigaltech.com
               (the “Platform”) and the software, services and content made available through the Platform (collectively
                 the “Services”).</p>
         <p>Each time you use the Platform, you consent to the collection, use and storage of the collected information as described

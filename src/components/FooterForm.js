@@ -89,8 +89,8 @@ class FooterForm extends React.Component {
             <div className="mb-2 form-group" style={{display:"inline"}}>
               <input ref="input1" type="email" className="col-md-8 col-lg-8 col-sm-12 col-xs-12 inputbox" placeholder="  Enter your work email"
               style={{width: "100%", height: "45px", backgroundColor:"#4F4F4F", color:"white", border:"none", borderRadius:"8px"}}/>
-              <button type="submit" className="col-md-4 col-lg-4 col-sm-12 col-xs-12 btn ourbutton mx-3"
-              style={{width: "180px", height: "45px", fontSize:"14px"}} onClick={this.check}>Get Started For Free</button>
+              <button type="submit" className="col-md-4 col-lg-4 col-sm-12 col-xs-12 btn ourbutton mx-3 gsff"
+              style={{height: "45px", fontSize:"14px"}} onClick={this.check}>Get Started For Free</button>
             </div>
           </div>
         </div>

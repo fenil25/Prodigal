@@ -36,7 +36,7 @@ class PCarousel extends Component {
       return(
         <div>
           <h2><b>Omnichannel Engagement</b></h2>
-          <p>Engage borrower on channel of her choice. Provide agents a single interface for all communication.</p>
+          <p>Engage borrower on channel of her choice. Provide agents a single interface for all communication</p>
         </div>
       );
     }else if(s==1){
@@ -174,7 +174,7 @@ class PCarousel extends Component {
             </li>
             <li onClick={this.changeImage.bind(this, 3)} style={{padding: "10px"}} id="3" className="list col-6">
               {this.state.selectedItem==3 ? <div className="si"><i className="fa fa-users"></i>
-              &nbsp;Personalized Aoproach</div> : <div><i className="fa fa-users"></i>
+              &nbsp;Personalized Approach</div> : <div><i className="fa fa-users"></i>
               &nbsp;Personalized Approach</div>}
             </li>
             <li onClick={this.changeImage.bind(this, 4)} style={{padding: "10px"}} id="4" className="list col-6">

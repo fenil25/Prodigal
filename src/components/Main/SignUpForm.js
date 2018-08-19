@@ -82,8 +82,8 @@ class SignUpForm extends Component {
               <input ref="input1" type="email" className="col-md-8 col-lg-8 col-sm-12 col-xs-12 inputbox" placeholder="  Enter you work email"
               style={{width: "80%", height: "45px", backgroundColor:"#4F4F4F", color:"white",
               border:"none", borderRadius:"8px"}}/>
-              <button type="submit" className="col-md-4 col-lg-4 col-sm-12 col-xs-12 btn ourbutton mx-3"
-              style={{width: "150px", height: "45px", fontSize:"14px"}} onClick={this.check}>Sign Up For Free</button>
+              <button type="submit" className="col-md-4 col-lg-4 col-sm-12 col-xs-12 btn ourbutton suf mx-3"
+              style={{height: "45px", fontSize:"14px"}} onClick={this.check}>Sign Up For Free</button>
             </div>
           </div>
         </div>

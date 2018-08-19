@@ -91,6 +91,10 @@ i{
   overflow-x: visible;
 }
 
+.gsff{
+  width: 180px;
+}
+
 .mainimg{
   width: 40.73vw;
   height: 30.28vw;
@@ -119,7 +123,10 @@ i{
     margin: 36px 10px;
   }
   .suf{
-    width: 165px;
+    width: 175px;
+  }
+  .gsff{
+    width: 200px;
   }
   .redheight{
     height: 150px;

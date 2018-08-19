@@ -35,8 +35,8 @@ class Card extends Component {
                 <img src={this.props.image} alt="Avatar" style={{borderRadius: "50%", width:"90px", height:"90px"}}/>
               </div>
             </div>
-            <MediaQuery maxWidth={321}>
-              <div className="col-6" style={{backgroundColor:"white", height:"100%", textAlign:"left", display:"table"}}>
+            <MediaQuery maxWidth={331}>
+              <div className="col-7" style={{backgroundColor:"white", height:"100%", textAlign:"left", display:"table"}}>
                 <div style={{height:"100%", display:"table-cell", verticalAlign:"middle"}}>
                   <span style={{fontSize:"12px"}}><b>{this.props.name}</b></span><br/>
                   <div style={{fontSize:"12px", marginBottom:"10px"}}>{this.props.position}</div>
@@ -48,7 +48,7 @@ class Card extends Component {
                 </div>
               </div>
             </MediaQuery>
-            <MediaQuery minWidth={321}>
+            <MediaQuery minWidth={331}>
             <div className="col-7" style={{backgroundColor:"white", height:"100%", textAlign:"left", display:"table"}}>
               <div style={{height:"100%", display:"table-cell", verticalAlign:"middle"}}>
                 <span style={{fontSize:"12px"}}><b>{this.props.name}</b></span><br/>

@@ -12,13 +12,13 @@ class Team extends Component {
         <h1 style={{fontSize:"35px", padding:"40px 0px", margin:"0px"}} className="ourtext"><b>Our Team</b></h1>
         <div className="row">
           <div className="col-md-4">
-            <Card name="Shantanu Gangal" description="Head of Data & Analytics at Fundbox, San Francisco based SMB lender where he implemented
+            <Card name="Shantanu Gangal" description="Head of Data & Analytics at Fundbox, a San Francisco based SMB lender where he implemented
             novel collection strategies." image={shantanu} position="CEO" link="https://www.linkedin.com/in/shantanugangal/"/>
           </div>
           <div className="col-md-4">
             <Card name="Sangram Raje" position="CTO" description="Co-led a 15-member trading desk at Tower Research
-             (prop. high-frequency hedge fund) for 9 years in New York. Sangram built algorithms and engineering infrastructure for handling
-             massive amount of data in real-time." image={sangram} link="https://www.linkedin.com/in/sangramraje/"/>
+            (high-frequency hedge fund) for 9 years in New York.
+             Built algorithms and engineering infrastructure for handling massive amount of data in real-time" image={sangram} link="https://www.linkedin.com/in/sangramraje/"/>
           </div>
           <div className="col-md-4">
           <Card name="Saransh Garg" position="CPO" description="Fintech investor at Accel, helped invest $50M+ in consumer and

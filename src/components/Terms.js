@@ -5,7 +5,7 @@ class Terms extends Component {
     return (
       <div className="container mt-5">
 
-      <h4 data-reactid="26">Prodigal Technology, Inc. Terms of Use</h4><p data-reactid="27">Effective Date: April 10th 2017</p>
+      <h4 data-reactid="26">Prodigal Technologies, Inc. Terms of Use</h4><p data-reactid="27">Effective Date: April 10th 2018</p>
       <div data-reactid="28"><div class="content nopad-side"
       style={{fontWeight: "300px"}}>
   <p>This Terms of Service constitutes a legally binding agreement between you (“you” or “Subscriber”)
@@ -57,7 +57,7 @@ class Terms extends Component {
     <li><strong>Account Security</strong>. Access by Subscriber and Authorized Users shall be subject to the terms and conditions
       of these Terms of Service. Subscriber shall be responsible for maintaining the confidentiality and security of
       account login information and is responsible for any and all activities that occur under Subscriber’s account.
-      Subscriber must immediately notify Prodigal at <a target="#" href="mailto:support@prodigal.com">support@prodigal.com</a> of any
+      Subscriber must immediately notify Prodigal at <a target="#" href="mailto:support@prodigaltech.com">support@prodigaltech.com</a> of any
       change in authorization, any unauthorized use of your account or username, or other account related security breach
       of which you are aware. <strong><i>Prodigal shall not be liable for any loss or damage arising from the failure of any user to keep your password or account secure.</i></strong></li>
   </ol>
@@ -171,7 +171,7 @@ class Terms extends Component {
   <ol start="17">
     <li><strong>DMCA - Notice of Claimed Infringement.&nbsp; </strong>If you have a good faith belief that your copyright
       has been infringed, you can download and submit a <a href="/dmca.pdf" target="#"> Notice of Claimed Infringement</a> to the Prodigal’s Designated
-      Agent at  <a target="#" href="mailto:support@prodigal.com">support@prodigal.com</a>.</li>
+      Agent at  <a target="#" href="mailto:support@prodigaltech.com">support@prodigaltech.com</a>.</li>
   </ol>
 
   <ol start="18">
@@ -179,7 +179,7 @@ class Terms extends Component {
       name, logo and/or relevant trademarks (“Properties”) to market and promote the Services. This includes
       the worldwide right to copy, translate, broadcast, transmit, distribute, exhibit, perform, publish and display
       the Properties as incorporated into Prodigal’s marketing and promotional materials. Your permission to use
-      the Properties may be terminated at any time upon thirty (30) days prior written notice to Prodigal at <a target="#" href="mailto:support@prodigal.com">support@prodigal.com</a>.</li>
+      the Properties may be terminated at any time upon thirty (30) days prior written notice to Prodigal at <a target="#" href="mailto:support@prodigaltech.com">support@prodigaltech.com</a>.</li>
   </ol>
 
   <ol start="19">
@@ -285,7 +285,7 @@ class Terms extends Component {
 
   <ol start="26">
     <li><strong>Customer Support.&nbsp; &nbsp;</strong>Please report any errors regarding this platform via our Feedback
-      Form. Customer support is available by email at <a target="#" href="mailto:support@prodigal.com">support@prodigal.com</a>          to address any issues you may have regarding your use of the Platform.&nbsp; Most concerns can be quickly resolved
+      Form. Customer support is available by email at <a target="#" href="mailto:support@prodigaltech.com">support@prodigaltech.com</a>          to address any issues you may have regarding your use of the Platform.&nbsp; Most concerns can be quickly resolved
       in this matter.&nbsp;</li>
   </ol>
 
@@ -345,7 +345,7 @@ class Terms extends Component {
     AND THE REMAINING PROVISIONS SHALL REMAIN ENFORCEABLE.</p>
 
   <p>The AAA’s rules, as well as forms for initiating arbitration proceedings, are available at <a target="#" href="http://www.adr.org">www.adr.org</a>.&nbsp;&nbsp;
-    When initiating a request to arbitrate with the AAA, you must also send a copy of the completed form to <a target="#" href="mailto:support@prodigal.com">support@prodigal.com</a>.</p>
+    When initiating a request to arbitrate with the AAA, you must also send a copy of the completed form to <a target="#" href="mailto:support@prodigaltech.com">support@prodigaltech.com</a>.</p>
 
   <p><strong>Exception – Small Claims Court Claims</strong>.&nbsp; Notwithstanding the parties’ agreement to
     resolve all disputes through arbitration, either party may seek relief in small claims courts for disputes or claims
@@ -433,7 +433,7 @@ class Terms extends Component {
     <li><strong>Interpretation.</strong> Headings are for reference purposes only and do not limit the scope or extent of
       such section.</li>
     <li><strong>Notices.</strong> All notices required or permitted to be given under these Terms of Service will be in writing
-      and delivered to:&nbsp; Prodigal at  <a target="#" href="mailto:support@prodigal.com">support@prodigal.com</a> and Subscriber at email account associated with Subscriber’s
+      and delivered to:&nbsp; Prodigal at  <a target="#" href="mailto:support@prodigaltech.com">support@prodigaltech.com</a> and Subscriber at email account associated with Subscriber’s
       Prodigal account.</li>
       </ol>
   </ol>

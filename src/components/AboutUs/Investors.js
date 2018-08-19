@@ -12,7 +12,7 @@ class AboutUs extends Component {
         </MediaQuery>
         <MediaQuery maxWidth={780}>
           <h1 style={{fontSize:"32px", padding:"50px 0px 30px 0px"}} className="ourtext"><b>Investors</b></h1>
-          <a href="http://www.ycombinator.com/"><img src={Ycomb} style={{width:"80vw", height:"160px", margin:"auto"}}/></a>
+          <a href="http://www.ycombinator.com/"><img src={Ycomb} style={{width:"80vw", margin:"auto"}}/></a>
         </MediaQuery>
       </div>
     );
